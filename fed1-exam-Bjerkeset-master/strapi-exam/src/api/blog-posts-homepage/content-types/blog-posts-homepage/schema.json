@@ -4,8 +4,7 @@
   "info": {
     "singularName": "blog-posts-homepage",
     "pluralName": "blog-posts-homepages",
-    "displayName": "blog-posts--homepage",
-    "description": ""
+    "displayName": "blog-posts-homepage"
   },
   "options": {
     "draftAndPublish": true
@@ -18,25 +17,13 @@
       "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "author": {
+      "type": "string"
     },
     "readtime": {
       "type": "integer"
-    },
-    "author": {
-      "type": "string",
-      "required": false
     }
   }
 }
