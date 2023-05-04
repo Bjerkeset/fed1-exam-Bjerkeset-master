@@ -1,0 +1,41 @@
+/*!
+ * Variables
+ * @tutorial https://web.dev/at-property/
+ * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-4/css-variables
+ */
+
+:root {
+  --clr-gradient-background-main: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2)
+  );
+  --clr-gradent-heading-main: linear-gradient(
+    to right,
+    rgba(242, 201, 76, 0.2),
+    rgba(242, 153, 74, 1),
+    rgba(242, 201, 76, 0.2)
+  );
+  --clr-gradent-divider: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.02),
+    rgba(242, 153, 74, 1),
+    rgba(0, 0, 0, 0.02)
+  );
+  --clr-gradient-btn-main: linear-gradient(to right, #4285f4, #2c75ff);
+  --clr-background-secondary: #111215;
+  --clr-background-blog: #c4bdb0;
+  --clr-background-card-main: #141518;
+  --clr-p-text: #a4a7b1;
+  --clr-btn-main: #3076f6;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  /* -------Sizes------- */
+  --font-size-heading-h1: clamp(2.7rem, 5vw, 4rem);
+  --font-size-heading-h4: clamp(1.5rem, 3vw, 2.4rem);
+  --padding-btn-cta-main: clamp(5px, 2vw, 10px) clamp(16px, 2vw, 24px);
+  --font-size-btn-cta-main: clamp(16px, 2vw, 24px);
+  --font-size-card-p: clamp(12px, 1vw, 16px);
+  --font-size-h4-main: clamp(16, 2vw, 32px);
+}
