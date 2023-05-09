@@ -8,7 +8,10 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, strapi" />
     <meta name="author" content="B.Bjerkeset" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./css/assets/navbar.css" />
+    <link rel="stylesheet" href="./css/assets/calculator.css" />
     <script defer type="module" src="./index.js"></script>
+    <script defer type="module" src="./js/assets/calculator.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,11 +19,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script defer type="module" src=""></script>
     <title>Homepage | Api-ary</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <header class="l-header"></header>
+    <header class="l-header">
+      <nav class="navbar__container">
+        <div class="navbar__list">
+          <ul class="navbar__list-ul">
+            <li>
+              <img
+                class="navbar__branding"
+                src="./assets/images/logo-resized-full-size.png"
+                alt="logo"
+              />
+            </li>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <div class="hamburger__bar"></div>
+          <div class="hamburger__bar"></div>
+          <div class="hamburger__bar"></div>
+        </div>
+      </nav>
+    </header>
 
     <main class="l-main">
       <article class="hero__article" role="doc-introduction">
@@ -136,6 +161,46 @@
       </section>
 
       <!-- <section class="search__section" role="search">search section</section> -->
+
+      <section class="calculator__section">
+        <div class="services__head">
+          <div class="services__head-text services__head__text--h4">
+            <h4>Services</h4>
+          </div>
+          <div class="services__head-text services__head__text--h2">
+            <h2>What We Offer</h2>
+          </div>
+        </div>
+        <div class="calculator__container">
+          <div class="start-slide active" id="start-slide">
+            <h2>Welcome to the Price Calculator</h2>
+            <button id="start-button">Start</button>
+          </div>
+          <div class="question" id="question1">
+            <h2>Example Question One</h2>
+            <button id="q1-yes">Yes</button>
+            <button id="q1-no">No</button>
+            <button id="q1-other">Other</button>
+          </div>
+          <div class="question" id="question2">
+            <h2>Example Question Two</h2>
+            <button id="q2-yes">Yes</button>
+            <button id="q2-no">No</button>
+            <button id="q2-other">Other</button>
+          </div>
+          <div class="result" id="result">
+            <h2>Final Price:</h2>
+            <p id="final-price">0</p>
+          </div>
+          <div class="indicator" id="indicator">
+            <span id="current-slide">0</span> / <span id="total-slides">2</span>
+          </div>
+          <div class="calc__nav-button">
+            <button id="js-back-btn">Back</button>
+            <button id="js-forward-btn">Forward</button>
+          </div>
+        </div>
+      </section>
 
       <section role="list" class="list__section">
         <div class="services__head">

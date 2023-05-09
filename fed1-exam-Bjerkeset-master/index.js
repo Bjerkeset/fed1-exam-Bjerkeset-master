@@ -1,3 +1,7 @@
+import { toggleHamburgerMenu } from "./js/assets/navbar";
+
+toggleHamburgerMenu();
+
 const listContainer = document.querySelector("#js-list-container");
 
 function generateCardHTML(post) {
@@ -35,7 +39,7 @@ function generateShowBlogsButtonHTML() {
 async function fetchBlogPosts() {
   try {
     const response = await fetch(
-      "http://localhost:1337/api/blog-posts-homepages"
+      "https://strapi-gwbt8.ondigitalocean.app/api/blog-posts-homepages"
     );
 
     if (!response.ok) {

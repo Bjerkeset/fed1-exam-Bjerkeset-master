@@ -1,0 +1,102 @@
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 10px;
+  /* width: 95vw; */
+  background-color: rgb(30, 70, 104);
+}
+
+.navbar__list {
+  display: flex;
+  padding: 60px 0 1000vh 0;
+  top: 0px;
+  left: 0;
+  /* flex-direction: ; */
+  backdrop-filter: blur(6px);
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  z-index: 101;
+  left: -100%;
+}
+
+.navbar__list-ul li {
+  /* display: flex; */
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: lightgoldenrodyellow;
+}
+.navbar__branding {
+  visibility: hidden;
+  position: absolute;
+  background-color: lightcoral;
+  width: 50px;
+}
+
+.navbar__list ul.is-active {
+  left: 0;
+}
+.navbar__list ul li:hover {
+  transform: scale(1.01);
+  text-decoration: underline;
+}
+.navbar__list ul a,
+.navbar__list ul li {
+  color: var(--clr-white);
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+}
+.hamburger {
+  cursor: pointer;
+  z-index: 101;
+  /* margin-left: auto; */
+  /* justify-self: start; */
+  background-color: aliceblue;
+}
+.hamburger.is-active .hamburger__bar:nth-child(1) {
+  transform: translateY(8px) rotate(141deg);
+}
+.hamburger.is-active .hamburger__bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-active .hamburger__bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-141deg);
+}
+.hamburger__bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar__branding {
+    visibility: visible;
+  }
+
+  .navbar__list {
+    backdrop-filter: blur(0px);
+  }
+  .navbar__list {
+    /* padding: 0 24px; */
+    /* background-color: aliceblue; */
+    justify-content: center;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    position: relative;
+  }
+  .navbar__container:hover .navbar__list ul li {
+    /* color: var(); */
+  }
+}

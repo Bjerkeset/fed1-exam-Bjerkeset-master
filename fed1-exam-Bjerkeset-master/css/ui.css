@@ -91,10 +91,12 @@
 
 .services__head__text--h4 h4 {
   font-size: 20px;
+  padding-top: 50px;
 }
 
 .services__head__text--h2 h2 {
   font-size: 50px;
+  padding: 50px 0;
 }
 
 .services__head__text--h2 {
@@ -118,7 +120,7 @@
   background-color: var(--clr-background-card-main);
   margin: 10px 10px 0 0;
   /* width: calc(33% - 20px); */
-  /* padding: 60px calc(5px + 2vw); */
+  padding: 60px calc(5px + 2vw);
   /* width: 576px; */
   max-width: 500px;
 }

@@ -1,0 +1,66 @@
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+} */
+
+.calculator__section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.calculator__container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(66, 66, 66);
+  padding: 40px;
+  /* margin: 0 20%; */
+  min-width: 300px;
+  max-width: 750px;
+  /* justify-content: center; */
+  align-items: center;
+  height: 500px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.start-slide,
+.question,
+.result {
+  display: none;
+}
+
+.start-slide.active,
+.question.active,
+.result.active {
+  display: block;
+  animation: slide-in 0.4s forwards;
+}
+
+.indicator {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.calc__nav-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

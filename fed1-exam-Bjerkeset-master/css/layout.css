@@ -27,8 +27,8 @@ body {
   flex-direction: column;
   grid-area: header;
   width: 100%;
+  background: none;
   /* height: 9vh; */
-  background-color: black;
 }
 
 .l-main {
