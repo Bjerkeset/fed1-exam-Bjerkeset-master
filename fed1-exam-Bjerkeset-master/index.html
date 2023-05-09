@@ -25,6 +25,13 @@
     <header class="l-header">
       <nav class="navbar__container">
         <div class="navbar__list">
+          <!-- <div class="navbar__branding">
+            <img
+              class="navbar__branding-img"
+              src="./assets/images/logo-resized-full-size.png"
+              alt="logo"
+            />
+          </div> -->
           <ul class="navbar__list-ul">
             <li>
               <img
@@ -165,10 +172,10 @@
       <section class="calculator__section">
         <div class="services__head">
           <div class="services__head-text services__head__text--h4">
-            <h4>Services</h4>
+            <h4>Calculator</h4>
           </div>
           <div class="services__head-text services__head__text--h2">
-            <h2>What We Offer</h2>
+            <h2>Price Your Project</h2>
           </div>
         </div>
         <div class="calculator__container">
@@ -176,29 +183,46 @@
             <h2>Welcome to the Price Calculator</h2>
             <button id="start-button">Start</button>
           </div>
-          <div class="question" id="question1">
-            <h2>Example Question One</h2>
-            <button id="q1-yes">Yes</button>
-            <button id="q1-no">No</button>
-            <button id="q1-other">Other</button>
-          </div>
-          <div class="question" id="question2">
-            <h2>Example Question Two</h2>
-            <button id="q2-yes">Yes</button>
-            <button id="q2-no">No</button>
-            <button id="q2-other">Other</button>
-          </div>
-          <div class="result" id="result">
-            <h2>Final Price:</h2>
-            <p id="final-price">0</p>
-          </div>
-          <div class="indicator" id="indicator">
-            <span id="current-slide">0</span> / <span id="total-slides">2</span>
-          </div>
-          <div class="calc__nav-button">
-            <button id="js-back-btn">Back</button>
-            <button id="js-forward-btn">Forward</button>
-          </div>
+          <form id="calculator-form">
+            <div class="question" id="question1">
+              <h2>Example Question One</h2>
+              <input type="radio" id="q1-yes" name="q1" value="yes" />
+              <label for="q1-yes">Yes</label>
+              <input type="radio" id="q1-no" name="q1" value="no" />
+              <label for="q1-no">No</label>
+              <input type="radio" id="q1-other" name="q1" value="other" />
+              <label for="q1-other">Other</label>
+            </div>
+            <div class="question" id="question2">
+              <h2>Example Question Two</h2>
+              <input type="radio" id="q2-yes" name="q2" value="yes" />
+              <label for="q2-yes">Yes</label>
+              <input type="radio" id="q2-no" name="q2" value="no" />
+              <label for="q2-no">No</label>
+              <input type="radio" id="q2-other" name="q2" value="other" />
+              <label for="q2-other">Other</label>
+            </div>
+            <div class="question" id="question3">
+              <h2>Example Question tree</h2>
+              <input type="radio" id="q3-yes" name="q3" value="yes" />
+              <label for="q3-yes">Yes</label>
+              <input type="radio" id="q3-no" name="q3" value="no" />
+              <label for="q3-no">No</label>
+              <input type="radio" id="q3-other" name="q3" value="other" />
+              <label for="q3-other">Other</label>
+            </div>
+            <div class="result" id="result">
+              <h2>Final Price:</h2>
+              <p id="final-price">0</p>
+            </div>
+            <div class="indicator" id="indicator">
+              <span id="current-slide">0</span> /
+              <span id="total-slides">3</span>
+            </div>
+            <div class="calc__nav-button">
+              <button type="button" id="js-back-btn">Back</button>
+            </div>
+          </form>
         </div>
       </section>
 
